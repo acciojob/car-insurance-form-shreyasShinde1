@@ -10,8 +10,8 @@
 	<!-- the entire body must be written by student -->
 	<form method="post" name="form" id="form">
 		<div>
-			<lanel for="name">Name8</lanel><br>
-			<input type="text" name="name" id="name">
+			<label for="name">Name8</lanel><br>
+			<input type="text" name="name" id="name" required>
 		</div>
 		<div>
 			<label for="email">Email</label><br>
@@ -24,9 +24,10 @@
 		</div>
 		<div>
 			<label for="cars">Car Brands</label><br>
-			BMW<input type="checkbox" name="cars" id="cars">
-			Audi<input type="checkbox" name="cars" id="cars">
-			Mercedez<input type="checkbox" name="cars" id="cars">
+			<select name="cars">
+				<option value="bmw">BMW</option>
+				<option value="audi">Audi</option>
+				<option value="mercedez">Mercedez</option>
 		</div>
 		<div>
 			<label for="carage">Car Age</label><br>
@@ -42,7 +43,9 @@
 		</div>
 		<div>
 			<label for="submit">submit button</label><br>
-			<input type="submit" name="submit"id="submit">
+			<button type="submit" name ="submit" id="submit">
+			</button>
+				 
 		</div>
     <script type="text/javascript" src="./script.js">
 </script>
